@@ -5,7 +5,28 @@
 
 int main()
 {
+    int number = 10;
+
     std::cout << "Hello World!\n";
+    printf("hello world! \" \n");
+
+    printf("123 123 hello world!!! \n");
+    printf("hello world! \n");
+    printf("hello world! %d \n", number-2);
+
+
+  
+
+        // Comment 주석 이 라인은 프로그램에 영향을 주지 않는다.
+        // 내가 필요한 글자를 마음대로 적으면 된다.
+
+        // 한줄 주석이라고 한다.
+
+        /* 
+        여러줄 주석이라고 한다.
+        여러줄 주석
+        이 라인들은 프로그램에 영향을 주지 않는다.
+        */
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
