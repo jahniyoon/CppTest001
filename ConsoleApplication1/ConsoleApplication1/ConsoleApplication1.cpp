@@ -2,6 +2,27 @@
 //
 
 #include <iostream>
+#include <stdio.h>         // 전처리기 지시문, 꼭대기에 위치함. 앞에서 처리한다.
+                            // #include 안에 <,> 안에 적어주는 것이 헤더파일
+                            // 없으면 실행할 수 없다. 
+
+void MyNewPrint(int number) // 숫자를 출력하기 위한 함수
+{
+    printf("입력 값은 %d 입니다. \n", number);
+}
+
+int plusTwonumbers(int number1, int number2)
+{
+    printf("입력 값은 %d, %d 입니다. \n", number1, number2);
+    return number1+number2;
+}
+
+int multiplenumbers(int number1, int number2, int number3)
+{
+    printf("입력 값은 %d, %d, %d 입니다. \n", number1, number2, number3);
+    return number1 * number2 * number3;
+}
+
 
 int main()
 {
@@ -14,6 +35,10 @@ int main()
     printf("hello world! \n");
     printf("hello world! %d \n", number-2);
 
+    MyNewPrint(100);        // 실제로 함수를 사용하는 줄에서 함수를 부른다. (call)
+
+    printf("두 수의 합은 %d 입니다. \n\n", plusTwonumbers(5, 7));
+    printf("세 수의 곱은 %d 입니다. \n\n", multiplenumbers(3, 2, 5));
 
   
 
@@ -28,6 +53,9 @@ int main()
         이 라인들은 프로그램에 영향을 주지 않는다.
         */
 }
+
+// return 0;
+
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
 // 프로그램 디버그: <F5> 키 또는 [디버그] > [디버깅 시작] 메뉴
